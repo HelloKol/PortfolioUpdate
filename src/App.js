@@ -29,8 +29,12 @@ function App() {
     <div className="px-6 sm:p-0">
       <Router>
         <CustomCursor />
-        <Scrollbar damping={0.04} renderByPixels={true} alwaysShowTracks={true}>
-          <div className="container mx-auto ">
+        <Scrollbar
+          damping={0.04}
+          renderByPixels={true}
+          alwaysShowTracks={false}
+        >
+          <div className="px-4 sm:px-10 lg:container mx-auto">
             <Navbar />
             <Route path="/" exact component={Home} />
             <Route path="/contacts" exact component={Contacts} />

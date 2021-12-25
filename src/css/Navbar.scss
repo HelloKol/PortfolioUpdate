@@ -1,3 +1,5 @@
+.nav-bar {
+}
 .nav-bar a {
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -18,7 +20,4 @@
   a:hover::after {
     width: 100%;
   }
-}
-.selected {
-  border-bottom: 1px solid white;
 }
