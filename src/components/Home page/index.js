@@ -1,15 +1,15 @@
 import React from "react";
 import About from "./About";
 import Landing from "./Landing";
-import Work from "./Work";
-import Footer from "../Footer/Footer";
+import Projects from "./Projects";
+import Footer from "../Footer";
 
 export default function Index() {
   return (
     <>
       <Landing />
       <About />
-      <Work />
+      <Projects />
       <Footer />
     </>
   );

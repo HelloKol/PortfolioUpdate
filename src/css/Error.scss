@@ -1,0 +1,9 @@
+.error-page{
+    h1{
+        color: #1F1F1F;
+        font-size: clamp(3rem, 25vw, 25rem); 
+    }
+    h1:nth-of-type(2){
+        color: #d12e2e;
+    }
+}

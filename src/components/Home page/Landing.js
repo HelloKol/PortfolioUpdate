@@ -59,7 +59,7 @@ export default function Landing() {
         </h1>
       </div>
 
-      <div className="flex justify-between mt-24 sm:mt-36">
+      <div className="flex justify-between mt-14 sm:mt-34">
         <div className="hero-work-links sm:flex items-end text-xl">
           <a
             href="https://github.com/HelloKol"

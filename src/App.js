@@ -2,11 +2,14 @@ import CustomCursor from "./components/Custom cursor";
 import Scrollbar from "react-smooth-scrollbar";
 import SmoothScrollbar from "smooth-scrollbar";
 import OverscrollPlugin from "smooth-scrollbar/plugins/overscroll";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useEffect } from "react";
 import Home from "./components/Home page";
 import Navbar from "./components/Navbar";
+import Work from "./components/Work";
+import WorkDetails from "./components/Work/WorkDetails";
 import Contacts from "./components/Contacts";
+import NotFound from "./components/Error page";
 
 function App() {
   SmoothScrollbar.use(OverscrollPlugin);
@@ -36,8 +39,13 @@ function App() {
         >
           <div className="px-4 sm:px-10 lg:container mx-auto">
             <Navbar />
-            <Route path="/" exact component={Home} />
-            <Route path="/contacts" exact component={Contacts} />
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/work" exact component={Work} />
+              <Route path="/work/:value" component={WorkDetails} />
+              <Route path="/contact" exact component={Contacts} />
+              <Route component={NotFound} />
+            </Switch>
           </div>
         </Scrollbar>
       </Router>

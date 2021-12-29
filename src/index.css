@@ -6,11 +6,11 @@ body {
   background-color: #0b0b0b;
 }
 ::-moz-selection { 
-  background: black;
+  background: #d12e2e;
 }
 
 ::selection {
-  background: black;
+  background: #d12e2e;
 }
 @tailwind base;
 @tailwind components;

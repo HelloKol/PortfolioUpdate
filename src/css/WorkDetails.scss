@@ -1,0 +1,21 @@
+.work-details{
+    margin-top: 4rem;
+    .project-title{
+	    font-size: clamp(2.5rem, 7vw, 8rem); 
+    }
+    .brief-title{
+	    font-size: clamp(2rem, 2.5vw, 4rem); 
+    }
+    .view-links{
+        font-size: 1.2rem;
+        padding: 5vh 0vw;
+        img{
+            height: 25px;
+            margin-left: 10px;
+        }
+    }
+    .final-product{
+        padding: 8vh 0vw;
+	    font-size: clamp(2rem, 2.5vw, 4rem); 
+    }
+}

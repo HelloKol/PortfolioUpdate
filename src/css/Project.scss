@@ -1,0 +1,17 @@
+.work-section {
+  h1 {
+    font-size: clamp(2.5rem, 4.5vw, 4.5vw);
+  }
+  .project-arrow {
+    transition: 0.2s ease-in-out;
+  }
+  .projects-list:hover .project-arrow {
+    transform: rotate(45deg);
+  }
+  .view-all {
+    transition: 0.2s ease-in-out;
+  }
+  .view-all-projects:hover .view-all {
+    transform: translateX(10px);
+  }
+}
