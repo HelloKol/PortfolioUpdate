@@ -26,7 +26,7 @@ export default function Projects() {
             <hr />
             <div className="flex justify-between">
               <p>{item.number}</p>
-              <Link to={`/PortfolioUpdate/work/${item.name}`}>
+              <Link to={`/work/${item.name}`}>
                 <div className="flex">
                   <h1 className="mr-4 sm:mr-8">{item.name}</h1>
                   <img
@@ -44,7 +44,7 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      <Link to={`/PortfolioUpdate/work`}>
+      <Link to={`/work`}>
         <a
           href="#a"
           className="uppercase text-xl sm:text-2xl flex justify-end mt-10 view-all-projects"

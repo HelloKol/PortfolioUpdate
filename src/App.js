@@ -49,10 +49,10 @@ function App() {
           <div className="px-4 sm:px-10 lg:container mx-auto">
             <Navbar />
             <Switch>
-              <Route path="/PortfolioUpdate" exact component={Home} />
-              <Route path="/PortfolioUpdate/work" exact component={Work} />
-              <Route path="/PortfolioUpdate/work/:value" component={WorkDetails} />
-              <Route path="/PortfolioUpdate/contact" exact component={Contacts} />
+              <Route path="/" exact component={Home} />
+              <Route path="/work" exact component={Work} />
+              <Route path="/work/:value" component={WorkDetails} />
+              <Route path="/contact" exact component={Contacts} />
               <Route component={NotFound} />
             </Switch>
           </div>

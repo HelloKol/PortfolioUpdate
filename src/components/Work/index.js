@@ -21,7 +21,7 @@ export default function Work() {
 
   return (
     <div className="text-white work-list">
-      <Link to="/PortfolioUpdate">
+      <Link to="/">
         <span className="flex justify-end mt-10">
           <img
             className="transform rotate-180 mr-6"
@@ -35,7 +35,7 @@ export default function Work() {
         <div>
           <nav class="work-menu">
             <div class="work-item">
-              <Link class="/PortfolioUpdate/work-item-link" to={`work/${item.name}`}>
+              <Link class="/work-item-link" to={`work/${item.name}`}>
                 <a>{item.name}</a>
               </Link>
               <img class="work-item-img" src={item.thumbnail} />
