@@ -1,5 +1,4 @@
 {
-  "homepage": "https://HelloKol.github.io/PortfolioUpdate",
   "name": "new-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -22,10 +21,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
     "start": "craco start",
-    "build": "craco build",
+    "build": "react-scripts build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
