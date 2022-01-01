@@ -14,7 +14,7 @@ export default function NotFound() {
       <div className="text-xl">
         <h2>Oops! An error occured.</h2>
         <h3>The page you are looking for does not exist.</h3>
-        <Link to="/">
+        <Link to="/PortfolioUpdate">
           <span className="flex justify-center mt-10">
             <img
               className="transform rotate-180 mr-6"

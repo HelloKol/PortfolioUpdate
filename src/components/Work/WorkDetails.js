@@ -22,7 +22,7 @@ export default function WorkDetails(props) {
 
   return (
     <div className="text-white work-details">
-      <Link to="/work">
+      <Link to="/PortfolioUpdate/work">
         <div className="flex flex-row mb-14">
           <img
             className="transform rotate-180 mr-6"
