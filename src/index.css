@@ -3,6 +3,7 @@ section {
 }
 body {
   cursor: none;
+  overflow: hidden;
   background-color: #0b0b0b;
 }
 ::-moz-selection { 

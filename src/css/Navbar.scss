@@ -1,4 +1,4 @@
-.nav-bar{
+.desktop-nav-bar{
   .moon{
     transform: rotate(-120deg);
     height: 40px;
@@ -27,6 +27,23 @@
   }
     a:hover::after {
       width: 100%;
+    }
+  }
+}
+
+.mobile-nav-container{
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100%;
+  .mobile-nav-items{
+    width: max-content;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    h1{
+      padding: 10px 0px;
+      font-size:2rem;
     }
   }
 }

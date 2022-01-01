@@ -10,7 +10,7 @@ export default function Landing() {
   useEffect(() => {
     tl = gsap.timeline();
     tl.from(".hero-text-wrapper h1 span", {
-      duration: 1,
+      duration: 0.8,
       y: 500,
       skewY: 30,
       stagger: {

@@ -21,6 +21,16 @@ export default function Work() {
 
   return (
     <div className="text-white work-list">
+      <Link to="/">
+        <span className="flex justify-end mt-10">
+          <img
+            className="transform rotate-180 mr-6"
+            src="/Right-arrow.png"
+            alt=""
+          />
+          <p>Go Home</p>
+        </span>
+      </Link>
       {projects.map((item) => (
         <div>
           <nav class="work-menu">
