@@ -2,7 +2,7 @@ import React from "react";
 
 export default function index() {
   return (
-    <div className="text-white py-10 sm:flex justify-between text-center">
+    <div className="text-white py-20 sm:flex justify-between text-center">
       <div className="flex justify-center">
         <img className="h-8 mr-10" src="./icons/envelope.svg" alt="" />
         <img className="h-8 mr-10" src="./icons/linkedin.svg" alt="" />

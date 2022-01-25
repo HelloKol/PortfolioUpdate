@@ -65,7 +65,7 @@ export default function CustomCursor() {
     followMouse();
   }, []);
   return (
-    <div className={`cursor-wrapper`}>
+    <div className="cursor-wrapper">
       <div className="main-cursor " ref={mainCursor}>
         <div
           className="main-cursor-background"

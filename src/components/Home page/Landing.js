@@ -52,10 +52,10 @@ export default function Landing() {
           <span>very stunning and engaging website</span>
         </h1>
         <h1 className="overflow-hidden">
-          <span>designs. I also make the designs</span>
+          <span>designs. I also develop designs</span>
         </h1>
         <h1 className="overflow-hidden">
-          <span>come to life from scratch.</span>
+          <span> into applications from scratch.</span>
         </h1>
       </div>
 

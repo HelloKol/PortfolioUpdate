@@ -5,7 +5,7 @@ import "../../css/Navbar.scss";
 export default function Navbar() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
   let color = {
-    color: "#d12e2e",
+    color: "#ec7263",
   };
 
   function openMobileMenu() {
@@ -22,7 +22,9 @@ export default function Navbar() {
     <>
       <nav className="mt-5 sm:block hidden">
         <ul className="desktop-nav-bar flex justify-between text-xl text-white">
-          <div class="moon"></div>
+          <NavLink to="/" exact={true}>
+            <div class="moon"></div>
+          </NavLink>
           <span>
             <a className="mr-10">
               <NavLink to="/" activeStyle={color} exact={true}>
@@ -43,28 +45,24 @@ export default function Navbar() {
         </ul>
       </nav>
 
-      <div onClick={openMobileMenu} className="mobile-nav-bar sm:hidden block">
-        <div class="wrapper">
-          <div class="icon nav-icon-5">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
+      <div class="mobile-navbar block sm:hidden z-50">
+        <input id="toggle" type="checkbox" />
 
-      <div className={openMobileNav ? `mobile-nav-container` : "hidden"}>
-        <div className="mobile-nav-items">
-          <NavLink onClick={openMobileMenu} to="/" activeStyle={color} exact={true}>
-            <h1>/home</h1>
-          </NavLink>
-          <NavLink onClick={openMobileMenu} to="/work" activeStyle={color} exact={true}>
-            <h1>/work</h1>
-          </NavLink>
-          <NavLink onClick={openMobileMenu} to="/contact" activeStyle={color} exact={true}>
-            <h1>/contact</h1>
-          </NavLink>
-        </div>
+        <label class="toggle-container" for="toggle">
+          <span class="button button-toggle"></span>
+        </label>
+
+        <nav class="nav">
+          <a class="nav-item" href="">
+            Home
+          </a>
+          <a class="nav-item" href="">
+            Work
+          </a>
+          <a class="nav-item" href="#contacts">
+            Contact
+          </a>
+        </nav>
       </div>
     </>
   );

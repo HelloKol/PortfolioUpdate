@@ -1,5 +1,4 @@
 import React from "react";
-import "../../css/About.scss";
 
 export default function About() {
   return (
@@ -15,6 +14,16 @@ export default function About() {
           Figma
         </span>
       </h1>
+      <a href="/projectMedia/updated-cv-compressed.pdf" target={"_blank"}>
+        <div className="flex flex-row mt-14">
+          <h2 className="uppercase text-3xl md:text-5xl mr-4">Resume</h2>
+          <img
+            className="max-h-10 self-center"
+            src="/icons/Square-arrow.png"
+            alt=""
+          />
+        </div>
+      </a>
     </div>
   );
 }

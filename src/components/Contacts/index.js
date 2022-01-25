@@ -4,7 +4,7 @@ import "../../css/Contact.scss";
 
 export default function index() {
   return (
-    <>
+    <div id="contacts">
       <div className="contact-page text-white md:mt-10 mt-20 mb-14">
         <div className="flex md:flex-row flex-col mb-10">
           <h1 className="header">Please feel free to contact me anytime</h1>
@@ -37,6 +37,6 @@ export default function index() {
         </a>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

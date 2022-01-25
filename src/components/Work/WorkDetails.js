@@ -77,15 +77,23 @@ export default function WorkDetails(props) {
           </div>
 
           <div className="view-links flex flex-row">
-            <span className="flex flex-row sm:mr-20 mr-16">
-              <p>View Live</p>
-              <img src="/Square-arrow.png" alt="" />
-            </span>
+            {item.live && (
+              <a
+                href={item.live}
+                target={"_blank"}
+                className="flex flex-row sm:mr-20 mr-16"
+              >
+                <p>View Live</p>
+                <img src="/Square-arrow.png" alt="" />
+              </a>
+            )}
 
-            <span className="flex flex-row">
-              <p>View Code</p>
-              <img src="/Square-arrow.png" alt="" />
-            </span>
+            {item.code && (
+              <a href={item.code} target={"_blank"} className="flex flex-row">
+                <p>View Code</p>
+                <img src="/Square-arrow.png" alt="" />
+              </a>
+            )}
           </div>
 
           <img src={item.thumbnail} alt="" />
