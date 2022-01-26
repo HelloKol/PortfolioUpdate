@@ -1,22 +1,10 @@
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../css/Navbar.scss";
 
 export default function Navbar() {
-  const [openMobileNav, setOpenMobileNav] = useState(false);
   let color = {
     color: "#ec7263",
   };
-
-  function openMobileMenu() {
-    const icons = document.querySelectorAll(".icon");
-    icons.forEach((icon) => {
-      icon.addEventListener("click", (event) => {
-        icon.classList.toggle("open");
-      });
-    });
-    setOpenMobileNav((prevState) => !prevState);
-  }
 
   return (
     <>
