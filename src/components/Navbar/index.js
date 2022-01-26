@@ -53,14 +53,20 @@ export default function Navbar() {
         </label>
 
         <nav class="nav">
-          <a class="nav-item" href="">
-            Home
+          <a class="nav-item">
+            <NavLink to="/" exact={true}>
+              Home
+            </NavLink>
           </a>
-          <a class="nav-item" href="">
-            Work
+          <a class="nav-item">
+            <NavLink to="/work" exact={true}>
+              Work
+            </NavLink>
           </a>
-          <a class="nav-item" href="#contacts">
-            Contact
+          <a class="nav-item">
+            <NavLink to="/contact" exact={true}>
+              Contact
+            </NavLink>
           </a>
         </nav>
       </div>
