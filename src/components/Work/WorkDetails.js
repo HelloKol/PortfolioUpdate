@@ -21,7 +21,7 @@ export default function WorkDetails(props) {
   }, []);
 
   return (
-    <div className="text-white work-details">
+    <div className="text-white work-details pb-20">
       <Link to="/work">
         <div className="flex flex-row mb-14">
           <img
