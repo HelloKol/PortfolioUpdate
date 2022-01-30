@@ -21,7 +21,7 @@ export default function Navbar() {
             </a>
             <a className="mr-10">
               <NavLink to="/work" activeStyle={color} exact={true}>
-                /work
+                /projects
               </NavLink>
             </a>
             <a>
@@ -48,7 +48,7 @@ export default function Navbar() {
           </a>
           <a class="nav-item">
             <NavLink to="/work" exact={true}>
-              Work
+              Projects
             </NavLink>
           </a>
           <a class="nav-item">

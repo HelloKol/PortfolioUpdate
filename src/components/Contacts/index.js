@@ -20,13 +20,17 @@ export default function index() {
               <p className="mb-4">London, United Kingdom</p>
               <div className="flex flex-row">
                 <span className="flex flex-row mr-10">
-                  <p className="mr-4">Linkedin</p>
-                  <img src="/Square-arrow.png" alt="" />
+                  <a href="https://www.linkedin.com/in/shehab-emon-79024a177/">
+                    <p className="mr-4">Linkedin</p>
+                    <img src="/Square-arrow.png" alt="" />
+                  </a>
                 </span>
 
                 <span className="flex flex-row">
-                  <p className="mr-4">Behance</p>
-                  <img src="/Square-arrow.png" alt="" />
+                  <a href="https://www.behance.net/shehabemon">
+                    <p className="mr-4">Behance</p>
+                    <img src="/Square-arrow.png" alt="" />
+                  </a>
                 </span>
               </div>
             </div>
