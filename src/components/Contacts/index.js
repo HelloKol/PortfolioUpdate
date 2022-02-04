@@ -16,7 +16,7 @@ export default function index() {
             </p>
 
             <div>
-              <p className="mb-4">Location:</p>
+              <p className="mb-4 text-my-red">Location:</p>
               <p className="mb-4">London, United Kingdom</p>
               <div className="flex flex-row">
                 <a
@@ -40,7 +40,7 @@ export default function index() {
             </div>
           </div>
         </div>
-        <a className="email underline" href="mailto:shehabhasan2020@gmail.com">
+        <a className="email underline break-words" href="mailto:shehabhasan2020@gmail.com">
           shehabhasan2020@gmail.com
         </a>
       </div>

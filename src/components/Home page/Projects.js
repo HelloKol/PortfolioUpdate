@@ -18,7 +18,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <div className="work-section text-white mt-56 mb-20">
+    <div className="project-section text-white mt-60 mb-20">
       <span style={{ color: "#7A7A7A" }}>/selected projects</span>
       <div className="mt-6">
         {projects
@@ -50,7 +50,7 @@ export default function Projects() {
       <Link to={`/work`}>
         <a
           href="#a"
-          className="uppercase text-xl sm:text-2xl flex justify-end mt-10 view-all-projects"
+          className="uppercase text-md sm:text-2xl flex justify-end mt-10 view-all-projects"
         >
           <p className="mr-6 view-all">View all</p>
           <img src="./icons/Right-arrow.png" alt="" />

@@ -1,6 +1,9 @@
-.work-section {
+.project-section {
   h1 {
-    font-size: clamp(2.5rem, 4.5vw, 4.5vw);
+    padding: 2rem 0rem;
+    font-family: "Monument Extended";
+    font-weight: 400;
+    font-size: clamp(3rem, 5vw, 6rem);
   }
   .project-arrow {
     transition: 0.2s ease-in-out;

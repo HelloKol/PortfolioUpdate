@@ -1,7 +1,9 @@
 .work-details{
     margin-top: 4rem;
     .project-title{
-	    font-size: clamp(2.5rem, 7vw, 8rem); 
+        font-family: "Monument Extended";
+        font-weight: 400;
+	    font-size: clamp(2.5rem, 5vw, 6rem); 
     }
     .brief-title{
 	    font-size: clamp(2rem, 2.5vw, 4rem); 

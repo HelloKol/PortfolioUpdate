@@ -20,9 +20,9 @@ export default function Work() {
   }, []);
 
   return (
-    <div className="text-white work-list">
+    <div className="work-section text-white">
       <Link to="/">
-        <span className="flex justify-end mt-10">
+        <span className="flex justify-end mt-10 mb-16 md:mb-0">
           <img
             className="transform rotate-180 mr-6"
             src="/Right-arrow.png"
@@ -32,16 +32,14 @@ export default function Work() {
         </span>
       </Link>
       {projects.map((item) => (
-        <div>
-          <nav class="work-menu">
-            <div class="work-item">
-              <Link class="/work-item-link" to={`work/${item.name}`}>
-                <a>{item.name}</a>
-              </Link>
-              <img class="work-item-img" src={item.thumbnail} />
-            </div>
-          </nav>
-        </div>
+        <nav class="work-menu">
+          <div class="work-item">
+            <Link class="/work-item-link" to={`work/${item.name}`}>
+              <a>{item.name}</a>
+            </Link>
+            <img class="work-item-img" src={item.thumbnail} />
+          </div>
+        </nav>
       ))}
     </div>
   );

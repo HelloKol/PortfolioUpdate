@@ -1,8 +1,10 @@
-.work-list{
+.work-section{
     margin-top: 5rem;
 }
 
 .work-item {
+	font-family: "Monument Extended";
+    font-weight: 400;
 	position: relative;
 }
 
@@ -44,9 +46,9 @@
 }
 
 .work-menu {
-	padding: 5vh 0 12vh;
+	padding: 5vh 0 10vh;
 	--offset: 20vw;
 	--move-initial: calc(-25% + var(--offset));
 	--move-final: calc(-50% + var(--offset));
-	font-size: 7vw;
+    font-size: clamp(2rem, 5.5vw, 8rem);
 }

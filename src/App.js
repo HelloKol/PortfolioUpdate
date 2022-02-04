@@ -32,7 +32,7 @@ function App() {
     }
 
     // Pre loader time before removing
-    setTimeout(() => setLoader(false), 3000);
+    setTimeout(() => setLoader(false), 2000);
   }, []);
 
   return window.location.pathname === "/" && loaderState ? (

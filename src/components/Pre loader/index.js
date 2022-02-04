@@ -7,7 +7,7 @@ export default function Loader() {
       bar = document.querySelector(".progress-bar"),
       counter = document.querySelector(".count"),
       i = 0,
-      throttle = 0.6;
+      throttle = 0.8;
 
     (function draw() {
       if (i <= 100) {

@@ -12,7 +12,7 @@ export default function Landing() {
     tl.from(".hero-text-wrapper h1 span", {
       duration: 0.8,
       y: 500,
-      skewY: 30,
+      skewY: 20,
       stagger: {
         amount: 0.8,
       },
@@ -34,7 +34,6 @@ export default function Landing() {
         {
           opacity: 1,
         },
-        "-=0.4"
       )
       .to(scrollDownArrowBox.current, {
         height: 0,
@@ -46,13 +45,13 @@ export default function Landing() {
     <div className="landing-section text-white mt-20">
       <div className="hero-text-wrapper">
         <h1 className="overflow-hidden">
-          <span>UI/UX & Front end developer. I create</span>
+          <span>UI/UX & Front end developer.</span>
         </h1>
         <h1 className="overflow-hidden">
-          <span>very stunning and engaging website</span>
+          <span>I create very stunning and engaging website designs.</span>
         </h1>
         <h1 className="overflow-hidden">
-          <span>designs. I also develop designs</span>
+          <span> I also develop designs</span>
         </h1>
         <h1 className="overflow-hidden">
           <span> into applications from scratch.</span>

@@ -1,6 +1,8 @@
 .contact-page{
     .header{
-	    font-size: clamp(3rem, 6vw, 8rem); 
+        font-family: "Monument Extended";
+        font-weight: 300;
+	    font-size: clamp(3rem, 5vw, 6rem); 
     }
     .right-contact{
         img{
@@ -8,6 +10,8 @@
         }
     }
     .email{
-	    font-size: clamp(1rem, 4.5vw, 7rem); 
+        font-family: "Monument Extended";
+        font-weight: 400;
+	    font-size: clamp(1.5rem, 3vw, 3.5rem); 
     }
 }
