@@ -14,7 +14,6 @@ import Loader from "./components/Pre loader";
 
 function App() {
   const [loaderState, setLoader] = useState(true);
-
   SmoothScrollbar.use(OverscrollPlugin);
   useEffect(() => {
     // Mouse scale up when hover over links

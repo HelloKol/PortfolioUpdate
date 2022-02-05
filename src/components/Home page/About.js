@@ -1,8 +1,6 @@
-import React from "react";
-
 export default function About() {
   return (
-    <div id="about" className="text-white mt-60">
+    <div className="text-white mt-60" data-aos="fade-right">
       <span style={{ color: "#7A7A7A" }}>/about me</span>
       <h1 className="mt-6 text-xl lg:text-3xl xl:text-4xl">
         Hi, I am Shehab Emon. Located in London, United kingdom. I am currently

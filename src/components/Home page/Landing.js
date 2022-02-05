@@ -27,14 +27,11 @@ export default function Landing() {
             amount: 0.2,
           },
         },
-        "-=0.8"
+        "-=0.5"
       )
-      .to(
-        scrollDownText.current,
-        {
-          opacity: 1,
-        },
-      )
+      .to(scrollDownText.current, {
+        opacity: 1,
+      })
       .to(scrollDownArrowBox.current, {
         height: 0,
         duration: 0.2,
@@ -94,7 +91,7 @@ export default function Landing() {
           </a>
         </div>
 
-        <div class=" hidden sm:grid grid-rows-3 grid-flow-col justify-items-center">
+        <div class="mt-10 hidden sm:grid grid-rows-3 grid-flow-col justify-items-center">
           <div class="col-span-2 -mt-20">
             <p className="scroll-down" ref={scrollDownText}>
               Scroll down
