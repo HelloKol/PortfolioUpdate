@@ -81,7 +81,7 @@ export default function WorkDetails(props) {
               <a
                 href={item.live}
                 target={"_blank"}
-                className="flex flex-row sm:mr-20 mr-16"
+                className="flex flex-row sm:mr-20 mr-16 text-my-red"
               >
                 <p>View Live</p>
                 <img src="/Square-arrow.png" alt="" />
@@ -89,7 +89,11 @@ export default function WorkDetails(props) {
             )}
 
             {item.code && (
-              <a href={item.code} target={"_blank"} className="flex flex-row">
+              <a
+                href={item.code}
+                target={"_blank"}
+                className="flex flex-row text-my-red"
+              >
                 <p>View Code</p>
                 <img src="/Square-arrow.png" alt="" />
               </a>
