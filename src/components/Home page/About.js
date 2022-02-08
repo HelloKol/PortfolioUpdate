@@ -18,7 +18,7 @@ export default function About() {
       >
         <h2
           style={{ fontFamily: "Monument Extended", fontWeight: "400" }}
-          className="uppercase text-3xl md:text-5xl mr-4"
+          className="uppercase text-3xl md:text-4xl mr-4"
         >
           Resume
         </h2>

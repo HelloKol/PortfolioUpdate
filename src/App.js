@@ -3,17 +3,15 @@ import Scrollbar from "react-smooth-scrollbar";
 import SmoothScrollbar from "smooth-scrollbar";
 import OverscrollPlugin from "smooth-scrollbar/plugins/overscroll";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Home from "./components/Home page";
 import Navbar from "./components/Navbar";
 import Work from "./components/Work";
 import WorkDetails from "./components/Work/WorkDetails";
 import Contacts from "./components/Contacts";
 import NotFound from "./components/Error page";
-import Loader from "./components/Pre loader";
 
 function App() {
-  const [loaderState, setLoader] = useState(true);
   SmoothScrollbar.use(OverscrollPlugin);
   useEffect(() => {
     // Mouse scale up when hover over links
@@ -29,14 +27,9 @@ function App() {
         secondaryCursor.style.transform = "scale(1)";
       });
     }
-
-    // Pre loader time before removing
-    setTimeout(() => setLoader(false), 2000);
   }, []);
 
-  return window.location.pathname === "/" && loaderState ? (
-    <Loader />
-  ) : (
+  return (
     <div className="px-6 sm:p-0">
       <Router>
         <CustomCursor />

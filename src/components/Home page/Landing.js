@@ -9,14 +9,18 @@ export default function Landing() {
 
   useEffect(() => {
     tl = gsap.timeline();
-    tl.from(".hero-text-wrapper h1 span", {
-      duration: 0.8,
-      y: 500,
-      skewY: 20,
-      stagger: {
-        amount: 0.8,
+    tl.from(
+      ".hero-text-wrapper h1 span",
+      {
+        duration: 0.8,
+        y: 500,
+        skewY: 20,
+        stagger: {
+          amount: 0.8,
+        },
       },
-    })
+      "+=0.5"
+    )
       .to(
         ".hero-work-links a",
         {
@@ -29,13 +33,21 @@ export default function Landing() {
         },
         "-=0.5"
       )
-      .to(scrollDownText.current, {
-        opacity: 1,
-      })
-      .to(scrollDownArrowBox.current, {
-        height: 0,
-        duration: 0.2,
-      });
+      .to(
+        scrollDownText.current,
+        {
+          opacity: 1,
+        },
+        "-=0.3"
+      )
+      .to(
+        scrollDownArrowBox.current,
+        {
+          height: 0,
+          duration: 0.2,
+        },
+        "-=0.15"
+      );
   }, []);
 
   return (

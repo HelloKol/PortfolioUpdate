@@ -1,5 +1,6 @@
 .desktop-nav-bar {
   .moon {
+    opacity: 0;
     transform: rotate(-120deg);
     height: 40px;
     width: 40px;
@@ -8,13 +9,13 @@
     border: 3px solid white;
     border-radius: 50%;
   }
-  a {
+  span a {
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     position: relative;
+    opacity: 0;
     &::after {
       content: "";
       display: block;
@@ -25,12 +26,13 @@
       background: white;
       transition: cubic-bezier(0.2, 0.72, 0, 0.84) 1.5s;
     }
-    a:hover::after {
+    &:hover::after {
       width: 100%;
     }
   }
 }
 
+// MOBILE NAVIGATION
 $items: 4;
 $transition-duration: 0.5s;
 $transition-delay: 0.05s;
@@ -38,9 +40,7 @@ $transition-delay: 0.05s;
   #toggle {
     display: none;
   }
-  // Styles for the 'open' state, if the checkbox is checked
   #toggle:checked {
-    //Any element you need to change the style if menu is open goes here, using the sibling selector (~)
     & ~ .toggle-container .button-toggle {
       box-shadow: 0 0 0 550px rgba(0, 0, 0, 0.1), inset 0 0 0 20px rgba(0, 0, 0, 0.1);
 
