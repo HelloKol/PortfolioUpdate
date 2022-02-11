@@ -1,15 +1,14 @@
-import React from "react";
+import CustomMap from "./CustomMap";
 import Footer from "../Footer";
 import "../../css/Contact.scss";
-
-export default function index() {
+export default function index(props) {
   return (
     <div id="contacts">
-      <div className="contact-page text-white md:mt-10 mt-20 mb-14">
+      <div className="contact-page text-white md:mt-16 mt-20 mb-14">
         <div className="flex md:flex-row flex-col mb-10">
-          <h1 className="header">Please feel free to contact me anytime</h1>
+          <h1 className="header leading-snug">Please feel free to contact me anytime</h1>
 
-          <div className="right-contact md:mt-56 mt-6 text-xl">
+          <div className="right-contact text-xl mt-6 md:mt-0">
             <p className="mb-14">
               Here is a list of ways to get in touch with me. Feel free to use
               any convinient method and i will get back as soon as possible.
@@ -40,10 +39,15 @@ export default function index() {
             </div>
           </div>
         </div>
-        <a className="email underline break-words" href="mailto:shehabhasan2020@gmail.com">
+        <a
+          className="email underline break-words"
+          href="mailto:shehabhasan2020@gmail.com"
+        >
           shehabhasan2020@gmail.com
         </a>
+        <CustomMap />
       </div>
+
       <Footer />
     </div>
   );

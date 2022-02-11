@@ -10,6 +10,8 @@
     "aos": "^3.0.0-beta.6",
     "dotenv": "^10.0.0",
     "firebase": "^9.6.1",
+    "google-map-react": "^2.1.10",
+    "google-maps-react": "^2.0.6",
     "gsap": "^3.7.1",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
